@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 
 // Based on https://www.baeldung.com/hibernate-one-to-many
 @Entity
-@Table(name = "shopping_cart")
+@Table(name = "carts")
 public class Cart {
     @Id
     @Column(name = "cart_id")
