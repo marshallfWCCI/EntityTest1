@@ -22,6 +22,24 @@ public class Employee {
             joinColumns = {@JoinColumn(name = "employee_id")},
             inverseJoinColumns = {@JoinColumn(name = "project_id")}
     )
+    private Set<Project> projects = new HashSet<>();
 
-    Set<Project> projects = new HashSet<>();
+    @Column(name = "employee_name")
+    private String name;
+
+    public Set<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(Set<Project> projects) {
+        this.projects = projects;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
