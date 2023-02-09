@@ -9,4 +9,8 @@ public class Item {
     @Column(name = "item_id")
     @GeneratedValue()
     private long itemID;
+
+    @ManyToOne
+    @JoinColumn(name="cart_id", nullable=false)
+    private Cart cart;
 }
