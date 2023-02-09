@@ -20,7 +20,7 @@ public class Something {
     @Column(name = "some_float", nullable = false)
     private Float someFloat;
 
-    @Column(name = "some_date", nullable = false)
+    @Column(name = "some_date")
     private LocalDate birthDate;
 
     @Column(name = "some_string", nullable = false, length = 14)
